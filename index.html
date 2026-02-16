@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Profile</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #f4f6f9, #e9edf3);
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            background-color: #fdfafa;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            color: #1f2a44;
+            margin-bottom: 20px;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 180px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 3px solid #0c0e13;
+        }
+
+        .details p {
+            margin: 6px 0;
+            font-size: 16px;
+            color: #0b0d0f;
+        }
+
+        .details span {
+            font-weight: bold;
+            color: #0e0e0f;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #080808;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th {
+            background-color: #0e0e0f;
+            color: rgb(252, 245, 245);
+            padding: 12px;
+            font-size: 16px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #dfe2ee;
+            color: #121314;
+        }
+
+        .links {
+            margin-top: 25px;
+        }
+
+        .link-box {
+            background-color: #e0e2e4f3;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .link-box a {
+            text-decoration: none;
+            color: #0d0d0e;
+            font-weight: 500;
+        }
+
+        .resume-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #0d0e0f;
+            color: rgb(226, 221, 221);
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+
+        .resume-btn:hover {
+            background-color: #162033;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Student Profile</h1>
+
+    <div class="profile">
+        <img src="./Profile.jpeg" alt="Profile Photo">
+
+        <div class="details">
+            <p><span>Name:</span> CAROLIN MARY N C</p>
+            <p><span>Department:</span> Electronics and Communication Engineering</p>
+            <p><span>Section:</span> A</p>
+        </div>
+    </div>
+
+    <h2>Semester Results</h2>
+
+    <table>
+        <tr>
+            <th>Semester</th>
+            <th>CGPA</th>
+        </tr>
+        <tr>
+            <td>Semester 1</td>
+            <td>7.34</td>
+        </tr>
+        <tr>
+            <td>Semester 2</td>
+            <td>8.00</td>
+        </tr>
+        <tr>
+            <td>Semester 3</td>
+            <td>7.69</td>
+        </tr>
+        <tr>
+            <td>Semester 4</td>
+            <td>7.84</td>
+        </tr>
+    </table>
+
+    <h2>Video & Audio Links</h2>
+
+    <div class="links">
+        <div class="link-box">
+            🎥 <a href="./SelfIntro.mp4" target="_blank">Video: Self Introduction</a>
+        </div>
+
+        <div class="link-box">
+            🎧 <a href="./FavouriteSong.mp4" target="_blank">Audio: Favourite Song</a>
+        </div>
+    </div>
+
+    <!-- Resume Button -->
+    <a href="./Resume.pdf" class="resume-btn" target="_blank">📄 View Resume</a>
+
+</div>
+
+</body>
+</html>
